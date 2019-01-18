@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+#slider, .wrap, .slide-content{
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+#about{
+    height: 80vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: whitesmoke;
+    border-bottom: slategray 2px solid;
+}
+
+.logo{
+    color: #303133;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #303133;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+nav a:hover{
+    color: black;
+    font-size: 18px;
+}
+
+#welcome{
+    min-height: 80vh;
+    background:url('../imgs/camera.jpeg') no-repeat 0 -100px;
+}
+
+#welcome button{
+    color: whitesmoke;
+    background-color: #303133;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#welcome button:hover{
+    color: #303133;
+    background-color: whitesmoke;
+    padding: 10px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+   position: relative;
+   left: 60%;
+   top: 30vh;
+   
+}
+
+.wrap{
+    position: relative;
+}
+
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1{
+    background-image: url('../imgs/img1.jpg');
+}
+.slide2{
+    background-image: url('../imgs/img2.jpg');
+}
+.slide3{
+    background-image: url('../imgs/img3.jpg');
+}
+.slide4{
+    background-image: url('../imgs/img4.jpg');
+}
+.slide5{
+    background-image: url('../imgs/img5.jpg');
+}
+
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: whitesmoke;
+    font-size: 35px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    color: whitesmoke;
+    font-size: 35px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer{
+    min-height: 10vh;
+    text-align: center;
+    border-top: slategray 2px solid;
+    background-color: whitesmoke;
+}
+
+footer p{
+    font-size: 12px;
+    color: #303133;
+}
+
+.subscribe h3{
+    color: #303133;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 22px;
+}
+
+.subscribe input{
+    border: none;
+    border-bottom: slategray 2px solid; 
+    height: 25px;
+}
+
+.subscribe button{
+    color: whitesmoke;
+    background-color: #303133;
+    padding: 5px 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #303133;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .nav-links{
+        display: none;
+    
+    }
+    .container{
+        left: 30%;
+        color: whitesmoke;
+    }
+    #welcome button{
+        color: #303133;
+        background-color: whitesmoke;
+    }
+    #welcome button:hover{
+        color: whitesmoke;
+        background-color: #303133;
+    }
+    
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    height: 90vh;
+    top: 10vh;
+    background-color: whitesmoke; opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+}
+
+@keyframes navLinkFade{
+
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
