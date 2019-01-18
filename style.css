@@ -61,7 +61,7 @@ nav a:hover{
 
 #welcome{
     min-height: 80vh;
-    background:url('../imgs/camera.jpeg') no-repeat 0 -100px;
+    background:url('/../imgs/camera.jpeg') no-repeat 0 -100px;
 }
 
 #welcome button{
@@ -101,19 +101,19 @@ nav a:hover{
 }
 
 .slide1{
-    background-image: url('../imgs/img1.jpg');
+    background-image: url('/../imgs/img1.jpg');
 }
 .slide2{
-    background-image: url('../imgs/img2.jpg');
+    background-image: url('/../imgs/img2.jpg');
 }
 .slide3{
-    background-image: url('../imgs/img3.jpg');
+    background-image: url('/../imgs/img3.jpg');
 }
 .slide4{
-    background-image: url('../imgs/img4.jpg');
+    background-image: url('/../imgs/img4.jpg');
 }
 .slide5{
-    background-image: url('../imgs/img5.jpg');
+    background-image: url('/../imgs/img5.jpg');
 }
 
 .slide-content{
