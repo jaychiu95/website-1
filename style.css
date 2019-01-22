@@ -61,7 +61,8 @@ nav a:hover{
 
 #welcome{
     min-height: 80vh;
-    background:url('imgs/camera.jpeg') no-repeat 0 -100px;
+    background:url('imgs/camera.jpeg') no-repeat 0;
+    background-size: cover;
 }
 
 #welcome button{
